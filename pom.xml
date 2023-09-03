@@ -36,13 +36,8 @@
     </modules>
 
     <scm>
-        <url>https://github.com/decentralized-identity/universal-resolver</url>
-        <connection>scm:git:https://github.com/decentralized-identity/universal-resolver.git</connection>
-        <developerConnection>scm:git:https://github.com/decentralized-identity/universal-resolver.git
-        </developerConnection>
-        <tag>HEAD</tag>
+        <developerConnection>scm:git:ssh:git@github.com:vraptorche/universal-resolver.git</developerConnection>
     </scm>
-
     <issueManagement>
         <url>https://github.com/decentralized-identity/universal-resolver/issues</url>
         <system>GitHub Issues</system>
