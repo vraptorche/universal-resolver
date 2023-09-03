@@ -90,7 +90,7 @@ public class WebAppConfig {
 		return postSlash ? uri.toString() : uri.toString().substring(0, uri.toString().length() - 1);
 	}
 
-	public void configureLocalUniresolver(DriverConfigs driverConfigs, LocalUniResolver uniResolver) {
+	public void configureLocalUniResolver(DriverConfigs driverConfigs, LocalUniResolver uniResolver) {
 
 		List<Driver> drivers = new ArrayList<>();
 
@@ -131,6 +131,6 @@ public class WebAppConfig {
 
 	@PostConstruct
 	private void initDrivers() {
-		if (driverConfigs.getDrivers() != null) configureLocalUniresolver(driverConfigs, localUniResolver);
+		if (driverConfigs.getDrivers() != null) configureLocalUniResolver(driverConfigs, localUniResolver);
 	}
 }
