@@ -5,7 +5,7 @@
     <groupId>decentralized-identity</groupId>
     <artifactId>uni-resolver</artifactId>
     <packaging>pom</packaging>
-    <version>0.14-SNAPSHOT</version>
+    <version>0.14</version>
     <name>uni-resolver</name>
     <description>A Universal Resolver for decentralized identity.</description>
     <url>https://uniresolver.io/</url>
@@ -195,8 +195,11 @@
             <plugin>
                 <groupId>com.amashchenko.maven.plugin</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.19.0</version>
+                <version>1.20.0</version>
                 <configuration>
+                    <gitFlowConfig>
+                        <productionBranch>main</productionBranch>
+                    </gitFlowConfig>
                     <skipTestProject>true</skipTestProject>
                 </configuration>
             </plugin>
