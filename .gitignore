@@ -1,10 +1,10 @@
 .project
 .classpath
 /.settings/
-/target/
+target/
 /bin/
 docker-compose.override.yml
-/.idea/
+.idea/
 *.iml
 .vscode/
 .factorypath

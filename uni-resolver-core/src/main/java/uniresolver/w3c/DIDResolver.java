@@ -8,6 +8,7 @@ import java.util.Map;
 
 public interface DIDResolver {
 
-	public ResolveDataModelResult resolve(String didString, Map<String, Object> resolutionOptions) throws ResolutionException;
-	public ResolveRepresentationResult resolveRepresentation(String didString, Map<String, Object> resolutionOptions) throws ResolutionException;
+    ResolveDataModelResult resolve(String didString, Map<String, Object> resolutionOptions) throws ResolutionException;
+
+    ResolveRepresentationResult resolveRepresentation(String didString, Map<String, Object> resolutionOptions) throws ResolutionException;
 }

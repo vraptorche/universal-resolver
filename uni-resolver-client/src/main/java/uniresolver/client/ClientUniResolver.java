@@ -43,10 +43,10 @@ public class ClientUniResolver implements UniResolver {
 		if (! baseUri.toString().endsWith("/")) baseUri = URI.create(baseUri.toString() + "/");
 
 		ClientUniResolver clientUniResolver = new ClientUniResolver();
-		clientUniResolver.setResolveUri(URI.create(baseUri.toString() + "identifiers"));
-		clientUniResolver.setPropertiesUri(URI.create(baseUri.toString() + "properties"));
-		clientUniResolver.setMethodsUri(URI.create(baseUri.toString() + "methods"));
-		clientUniResolver.setTestIdentifiersUri(URI.create(baseUri.toString() + "testIdentifiers"));
+		clientUniResolver.setResolveUri(URI.create("%sidentifiers".formatted(baseUri)));
+		clientUniResolver.setPropertiesUri(URI.create("%sproperties".formatted(baseUri)));
+		clientUniResolver.setMethodsUri(URI.create("%smethods".formatted(baseUri)));
+		clientUniResolver.setTestIdentifiersUri(URI.create("%stestIdentifiers".formatted(baseUri)));
 
 		return clientUniResolver;
 	}

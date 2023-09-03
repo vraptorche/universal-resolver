@@ -10,10 +10,10 @@ server:
 spring:
   profiles:
     active: ${uniresolver_web_spring_profiles_active}
-uniresolver:
+uni-resolver:
   drivers:
     - pattern: "^(did:btcr:.+)$"
-      url: http://driver-did-btcr:8080/
+      url: "http://driver-did-btcr:8080/"
       propertiesEndpoint: 'true'
       testIdentifiers:
         - did:btcr:xz35-jznz-q9yu-ply

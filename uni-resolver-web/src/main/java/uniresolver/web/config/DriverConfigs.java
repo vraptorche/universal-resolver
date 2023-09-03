@@ -1,15 +1,16 @@
 package uniresolver.web.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.NestedConfigurationProperty;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
 import java.util.StringJoiner;
 
 @Configuration
-@ConfigurationProperties("uniresolver")
+@ConfigurationProperties("uni-resolver")
 public class DriverConfigs {
-
+	@NestedConfigurationProperty
 	private List<DriverConfig> drivers;
 
 	public List<DriverConfig> getDrivers() {
@@ -23,7 +24,17 @@ public class DriverConfigs {
 	public static class DriverConfig {
 
 		private String pattern;
+
+		public String getUrl() {
+			return url;
+		}
+
+		public void setUrl(String url) {
+			this.url = url;
+		}
+
 		private String url;
+
 		private String propertiesEndpoint;
 		private List<String> testIdentifiers;
 
@@ -35,13 +46,7 @@ public class DriverConfigs {
 			this.pattern = value;
 		}
 
-		public String getURL() {
-			return url;
-		}
 
-		public void setURL(String value) {
-			this.url = value;
-		}
 
 		public String getPropertiesEndpoint() {
 			return propertiesEndpoint;

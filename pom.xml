@@ -32,6 +32,7 @@
         <module>uni-resolver-web</module>
         <module>uni-resolver-driver</module>
         <module>uni-resolver-driver-http</module>
+        <module>uni-resolver-driver-keri</module>
     </modules>
 
     <scm>
